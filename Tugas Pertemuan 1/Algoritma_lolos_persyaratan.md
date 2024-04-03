@@ -3,25 +3,25 @@
 ## ALGORITMA LOLOS PERSYARATAN
 
 **Deklarasi Variabel**
- *string 	: nama*
- *int 		: umur, tinggi badan*
+   *string 	: nama*
+   *int 		: umur, tinggi badan*
 
 **Input**
- *nama*
- *umur*
- *tinggi badan*
+   *nama*
+   *umur*
+   *tinggi badan*
 
 **Kondisi**
  *If*
 
- *umur >= 18*
- *tinggi badan >= 169*
- *keterangan :="Lolos"*
+   *umur >= 18*
+   *tinggi badan >= 169*
+   *keterangan :="Lolos"*
 
  *Else*	
 
- *keterangan :="Tidak lolos"*
+   *keterangan :="Tidak lolos"*
 
 **Output**
- *nama*
- *keterangan*
+   *nama*
+   *keterangan*
