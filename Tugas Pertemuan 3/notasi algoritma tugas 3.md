@@ -7,7 +7,8 @@
 *Deklarasi.*
 ```
 - string    : NamaSiswa
-- float     : NilaiPertandinganI, NilaiPertandinganII, NilaiPertandinganIII, NilaiRata_rata
+- int       : NilaiPertandinganI, NilaiPertandinganII, NilaiPertandinganIII
+- float     : NilaiRata_rata
 ```
 
 *Input.*
@@ -51,7 +52,8 @@
 *Deklarasi.*
 ```
 - string    : NamaSiswa
-- float     : NilaiKeaktifan, NilaiTugas, NilaiUjian, NilaiMurniKeaktifan, NilaiMurniTugas, NilaiMurniUjian, NilaiAkhir
+- int       : NilaiKeaktifan, NilaiTugas, NilaiUjian
+- float     : NilaiMurniKeaktifan, NilaiMurniTugas, NilaiMurniUjian, NilaiAkhir
 ```
 
 *Input.*
@@ -90,6 +92,71 @@
 - NilaiMurniTugas
 - NilaiMurniUjian
 - NilaiAkhir
+```
+
+*Mengakhiri Program.*
+
+## **Menghitung Gaji Karyawan Kontrak**
+
+*Memulai Program.*
+
+*Deklarasi.*
+```
+- string    : NamaKaryawan
+- int       : GajiPokok = 300000
+- int       : GolonganJabatan
+- float     : Tunjangan_Jabatan
+- string    : Pendidikan
+- float     : Tunjangan_Pendidikan
+- int       : HonorLembur = 3500
+- float     : Honor_Lembur
+```
+
+*Input.*
+```
+- NamaKaryawan
+- GolonganJabatan
+- Pendidikan
+- Jumlah_JamKerja
+
+```
+
+*Proses.*
+```
+- Tunjangan_Jabatan = GolonganJabatan * GajiPokok
+- Tunjangan_Pendidikan = Pendidikan * GajiPokok
+- Honor_Lembur
+    Jika (Jumlah_JamKerja > 8)
+    Honor_Lembur = (Jumlah_JamKerja - 8) * HonorLembur
+```
+
+*If.*
+```
+- Tunjangan_Jabatan
+ - Jika GolonganJabatan == 1, maka mendapatkan 0.05
+ - Jika GolonganJabatan == 2, maka mendapatkan 0.1
+ - Jika GolonganJabatan == 3, maka mendapatkan 0.15
+
+- Tunjangan_Pendidikan
+ - Jika Pendidikan == SMA, maka mendapatkan 0.025
+ - Jika Pendidikan == D1, maka mendapatkan 0.05
+ - Jika Pendidikan == D3, maka mendapatkan 0.2
+ - Jika Pendidikan == S1, maka mendapatkan 0.3
+```
+
+*Else.*
+```
+- Tunjangan_Jabatan selain Golongan == 1, Golongan == 2, Golongan == 3 tidak dapat tunjangan.
+- Tunjangan_Pendidikan selain Pendidikan == SMA, Pendidikan == D1, Pendidikan == D3, Pendidikan == S1 tidak dapat tunjangan.
+- Honor_Lembur Jumlah_JamKerja < 8 tidak dapat honor lembur.
+```
+
+*Output/Hasil.*
+```
+- NamaKaryawan
+- Tunjangan_Jabatan
+- Tunjangan_Pendidikan
+- Honor_Lembur
 ```
 
 *Mengakhiri Program.*
