@@ -107,7 +107,7 @@
 - int       : GajiPokok = 300000
 - int       : GolonganJabatan
 - float     : Tunjangan_Jabatan
-- char      : Pendidikan
+- string      : Pendidikan
 - double    : Tunjangan_Pendidikan
 - int       : HonorLembur = 3500
 - float     : Honor_Lembur
